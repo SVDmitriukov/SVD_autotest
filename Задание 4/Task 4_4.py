@@ -9,8 +9,15 @@
 
 def multiplication_chain(num):
     # Здесь нужно написать код
+    num = str(num)
+    count_multy = 0
+    while len(num) > 1:
+        count_multy = count_multy + 1
+        suma = 1
+        for slider in str(num):
+            suma *= int(slider)
+        num = str(suma)
     return count_multy
-
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 

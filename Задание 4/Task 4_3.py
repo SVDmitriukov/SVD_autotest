@@ -8,6 +8,11 @@
 
 def sum_digits(num):
     # Здесь нужно написать код
+    our_sum = 0
+    while num != 0:
+        p = num % 10
+        num = num // 10
+        our_sum = our_sum + p
     return our_sum
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
