@@ -5,6 +5,13 @@
 
 def create_phone_number(num_tuple):
     # Здесь нужно написать код
+    num_tuple = list(num_tuple)
+    a = [str(slider) for slider in num_tuple]
+    part1 = ''.join(a[0:3])
+    part2 = ''.join(a[3:6])
+    part3 = ''.join(a[6:])
+    str_phone = f"({part1}) {part2}-{part3}"
+
     return str_phone
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

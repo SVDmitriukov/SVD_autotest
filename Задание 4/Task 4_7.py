@@ -4,6 +4,13 @@
 
 def move_zeros(lst):
     # Здесь нужно написать код
+    c = len(lst)
+    slider = c - 1
+    while slider >= 0:
+        if lst[slider] == 0:
+            x = lst.pop(slider)
+            lst.append(x)
+        slider -= 1
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
